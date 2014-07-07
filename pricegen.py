@@ -15,7 +15,11 @@ def buildRowsForPV(pvs,week):
     
     rows = ""
     
-    for pv in pvs:        
+    pvCounter = 0
+    
+    for pv in pvs:
+        print "Building rows for pv "+str(pvCounter)
+        pvCounter += 1
         for eancode in pv.eancodes.keys():
             idpv = pv.idpv
             timestamp = str(week)           
