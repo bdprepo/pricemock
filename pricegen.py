@@ -4,7 +4,7 @@ from it.istat.prezzi.gen.model.PV import PV
 from it.istat.prezzi.gen.Generator import generateEanCodes, generateSequence
 from it.istat.prezzi.gen.RandomStuff import getRandomDiscount,getRandomQuantity,addRandomDelta
 
-NUMBER_OF_WEEKS = 52
+NUMBER_OF_WEEKS = 104
 EANCODES_PER_IDPV = 0
 
 HEADER = "IDPV,TIMESTAMP,EANCODE,QUANTITY,SALES,SC\n"
