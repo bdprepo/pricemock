@@ -68,9 +68,13 @@ def main(argv):
     pvs = []
     
     # Generates a list of PV (sales point) object with a map of idpv <-> base sales
+    print("Generating PV and relative base sales")
+    pvCount = 0;
     for idpv in idpvList:
         pv = PV(idpv, totalEanCodes, EANCODES_PER_IDPV)
         pvs.append(pv)
+        pvCount+=1
+        print("Generated "+str(pvCount)+" PVs of "+str(NUMBER_OF_IDPV))
    
     outputfile = open(OUTPUT_FILE, "w")
     
