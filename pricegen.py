@@ -18,7 +18,7 @@ def buildRowsForPV(pvs,week):
     pvCounter = 0
     
     for pv in pvs:
-        print "Building rows for pv "+str(pvCounter)
+        print "Building rows for pv "+str(pvCounter)+" and week: "+week
         pvCounter += 1
         for eancode in pv.eancodes.keys():
             idpv = pv.idpv
